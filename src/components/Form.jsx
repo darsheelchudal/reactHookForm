@@ -1,4 +1,7 @@
 import react from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import yup from "yup";
 
 const Form = () => {
   return (
@@ -30,7 +33,7 @@ const Form = () => {
               </div>
               <div className="form-item">
                 <input
-                  type="email"
+                  type="text"
                   name="email"
                   id="email"
                   placeholder="Email..."
@@ -40,7 +43,7 @@ const Form = () => {
               <div className="form-item">
                 <label htmlFor="age"></label>
                 <input
-                  type="number"
+                  type="text"
                   name="age"
                   id="age"
                   placeholder="Age..."
